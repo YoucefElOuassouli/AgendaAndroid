@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,LabelFor,RtlHardcoded,RtlSymmetry,UselessParent,UsingOnClickInXml,Autofill,SpUsage"
+
+    android:background="@drawable/dark_with_img_round"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:layout_marginTop="15dp"
+    app:cardElevation="8dp"
+    android:layout_height="120dp">
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/user_img_prof"
+        android:layout_width="100dp"
+        android:background="@color/secondary_color"
+        android:layout_height="100dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/primary_color"
+        android:textSize="25sp"
+        android:fontFamily="@font/montserrat"
+        android:layout_toEndOf="@+id/user_img_prof"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"/>
+
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address Email"
+        android:textColor="@color/primary_color"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat"
+        android:layout_toEndOf="@+id/user_img_prof"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/user_name"/>
+
+    <TextView
+        android:id="@+id/user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textColor="@color/primary_color"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat"
+        android:layout_toEndOf="@+id/user_img_prof"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/user_email"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="17dp"
+        android:textColor="@color/primary_color"
+        android:layout_toEndOf="@+id/user_phone"
+        android:layout_below="@id/user_email"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="3dp"/>
+
+
+    <TextView
+        android:id="@+id/user_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="role"
+        android:textColor="@color/primary_color"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat"
+        android:layout_toEndOf="@+id/user_phone"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/user_email"/>
+
+
+
+    <TextView
+        android:id="@+id/delete_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:textSize="20sp"
+        android:textColor="@color/primary_color"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>

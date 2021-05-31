@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="18sp"
+        android:textColor="@color/optional_color_one"
+        android:id="@+id/Time"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Time"
+        android:text="Time"
+        android:textSize="18dp"    tools:ignore="HardcodedText,LabelFor,RtlHardcoded,RtlSymmetry,UselessParent,UsingOnClickInXml,Autofill,SpUsage"
+
+        android:textColor="@color/optional_color_one"
+        android:id="@+id/Time_Num"/>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/Time_Num"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="5dp"    tools:ignore="HardcodedText,LabelFor,RtlHardcoded,RtlSymmetry,UselessParent,UsingOnClickInXml,Autofill,SpUsage"
+
+        android:layout_width="315dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/SeanceHolder"
+            android:background="@drawable/green_with_img_btn"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingBottom="20dp"
+            android:paddingEnd="10dp"    tools:ignore="HardcodedText,LabelFor,RtlHardcoded,RtlSymmetry,UselessParent,UsingOnClickInXml,Autofill,SpUsage"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titre"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:id="@+id/Seance_title"/>
+
+            <TextView
+                android:layout_below="@+id/Seance_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="description"
+                android:textColor="@color/primary_color"
+                android:id="@+id/seance_desc"/>
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:00 15:00"
+                android:textColor="@color/primary_color"
+                android:id="@+id/From_To"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_below="@id/seance_desc"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:id="@+id/line4"
+                android:layout_marginEnd="25dp"/>
+
+            <LinearLayout
+                android:layout_below="@+id/line4"
+                android:layout_marginTop="15dp"
+                android:id="@+id/ProgressI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Progress 1"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/primary_color"/>
+                <View
+                    android:layout_width="100dp"
+
+                    android:layout_height="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/purple_with_img_btn"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="55%"
+                    android:textColor="@color/primary_color"
+                    android:textAlignment="textEnd"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@+id/ProgressI"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ProgressII"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Progress 2"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/primary_color"/>
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/purple_with_img_btn"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20%"
+                    android:textColor="@color/primary_color"
+                    android:textAlignment="textEnd"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@+id/ProgressII"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ProgressIII"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Progress 2"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/primary_color"/>
+                <View
+                    android:layout_width="75dp"
+
+                    android:layout_height="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/purple_with_img_btn"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="75%"
+                    android:textColor="@color/primary_color"
+                    android:textAlignment="textEnd"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

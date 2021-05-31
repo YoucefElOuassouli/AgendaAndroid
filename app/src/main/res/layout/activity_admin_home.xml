@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primary_color"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminHome"
+    tools:ignore="HardcodedText" >
+
+
+
+
+    <ImageButton
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="35dp"
+        android:background="@drawable/home"
+        android:layout_height="35dp"
+        android:id="@+id/Admin_home"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AGENDA"
+        android:layout_toEndOf="@+id/Admin_home"
+        android:layout_toStartOf="@+id/LogOut"
+        android:fontFamily="@font/montserrat"
+        android:textSize="25sp"
+        android:id="@+id/App_Name"
+        android:textColor="@color/secondary_color"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:textAlignment="center"
+        android:layout_below="@+id/App_Name"
+        android:fontFamily="@font/montserrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="agenda horse riding"
+        android:layout_toEndOf="@+id/Admin_home"
+        android:layout_toStartOf="@+id/LogOut"
+        android:textSize="15sp"
+        android:textColor="@color/optional_color_one"
+        tools:ignore="HardcodedText" />
+
+
+    <ImageButton
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/exit"
+        android:id="@+id/LogOut"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="ContentDescription" />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/LogOut"
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/t3"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="180dp"
+                android:background="@drawable/btn_round"
+
+                android:layout_height="150dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="70dp"
+                        android:id="@+id/pic1"
+                        android:layout_height="70dp"
+                        android:background="@drawable/user"
+                        android:layout_marginStart="5dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gestion des Absences"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/optional_color_one"
+                        android:textSize="15sp"
+                        android:id="@+id/ges"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_below="@+id/pic1"
+                        android:layout_alignParentBottom="true"
+                        tools:ignore="HardcodedText" />
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ssss"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="180dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/yellow_btn_with_img"
+                android:layout_height="wrap_content"
+                android:onClick="goToSeanceManagement"
+                tools:ignore="UsingOnClickInXml">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="60dp"
+                        android:id="@+id/pic2"
+                        android:layout_height="60dp"
+                        android:background="@drawable/user"
+                        android:layout_marginStart="5dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gestion des Seance"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/optional_color_two"
+                        android:textSize="15sp"
+                        android:id="@+id/ges1"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_below="@+id/pic2"
+                        tools:ignore="HardcodedText" />
+
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ss"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/t3"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_with_img_btn"
+                android:paddingBottom="10dp"
+                android:onClick="goToUserManagement"
+                tools:ignore="UsingOnClickInXml">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="60dp"
+                        android:id="@+id/pic3"
+                        android:layout_height="60dp"
+                        android:background="@drawable/user_management"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gestion des utilisateurs"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/primary_color"
+                        android:textSize="15sp"
+                        android:id="@+id/ges2"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_below="@+id/pic3"
+                        tools:ignore="HardcodedText" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admins: "
+                        android:layout_below="@+id/ges2"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/primary_color"
+                        android:textSize="15sp"
+                        android:id="@+id/tt5"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_alignParentStart="true"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:id="@+id/admin_count"
+                        android:layout_below="@+id/ges2"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_toEndOf="@+id/tt5"
+
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clients: "
+                        android:layout_below="@+id/tt5"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/primary_color"
+                        android:textSize="15sp"
+                        android:id="@+id/tt6"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:id="@+id/client_count"
+                        android:layout_below="@+id/tt5"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_toEndOf="@+id/tt6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monitors: "
+                        android:layout_below="@+id/tt6"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/primary_color"
+                        android:textSize="15sp"
+                        android:id="@+id/tt7"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:id="@+id/monitor_count"
+                        android:layout_below="@+id/tt6"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_toEndOf="@+id/tt7" />
+
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+
+
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/ssss"
+                android:layout_toEndOf="@+id/ss"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="245dp">
+
+
+                <RelativeLayout
+                    android:layout_marginStart="5dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mail_receiver"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/lin1"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="245dp">
+
+
+        <RelativeLayout
+            android:layout_marginStart="5dp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

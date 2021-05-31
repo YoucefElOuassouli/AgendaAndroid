@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,Autofill"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    tools:context=".Client.Calendar">
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textFilter"
+        android:hint="Search..."
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/optional_color_one"
+        android:textColorHint="@color/optional_color_one"
+        android:fontFamily="@font/montserrat"
+        android:textSize="20sp"
+        android:id="@+id/search_for_seance_or_day"
+        android:background="@drawable/edit_text"
+        android:paddingStart="25dp" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Filter"
+        android:id="@+id/Testing"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_for_seance_or_day"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv2"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_for_seance_or_day"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"/>
+
+
+</RelativeLayout>

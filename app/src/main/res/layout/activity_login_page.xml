@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/primary_color"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.LoginPage">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="AGENDA"
+            android:textSize="80sp"
+            android:textColor="@color/secondary_color"
+            android:fontFamily="@font/montserrat"
+            android:id="@+id/t1"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_below="@+id/t1"
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Agenda Horse Riding"
+            android:textSize="25sp"
+            android:textColor="@color/optional_color_one"
+            tools:ignore="HardcodedText" />
+
+
+
+        <EditText
+            android:layout_below="@+id/t2"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:paddingStart="25dp"
+            android:id="@+id/email_login"
+            android:textColor="@color/primary_color"
+            android:textColorHint="@color/primary_color"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/edit_text_round"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/email_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:paddingStart="25dp"
+            android:id="@+id/pass_login"
+            android:textColor="@color/primary_color"
+            android:textColorHint="@color/primary_color"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/edit_text_round"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+
+
+        <Button
+            android:layout_below="@+id/pass_login"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:id="@+id/Login_btn"
+            android:background="@color/secondary_color"
+            android:textColor="@color/primary_color"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
